@@ -1,3 +1,3 @@
 # Praktikum-Web-H
 
-    Untuk Permodul bisa dilihat di bransnya
+    Untuk Permodul bisa dilihat di branchesnya :)
