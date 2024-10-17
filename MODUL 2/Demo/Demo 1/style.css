@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(145deg, #e0eafc, #cfdef3);
+    background: linear-gradient(145deg, #50545c, #cfdef3);
     margin: 0;
 }
 
@@ -22,7 +22,7 @@ body {
 #display {
     width: 100%;
     height: 80px;
-    background-color: #2c3e50;
+    background-color: #2f3032;
     color: white;
     font-size: 40px;
     text-align: right;
@@ -72,3 +72,13 @@ button:last-child {
 button:last-child:hover {
     background-color: #e67e22;
 }
+
+/* Tambahan styling tombol DEL */
+button:nth-child(2) {
+    background: #e74c3c;
+}
+
+button:nth-child(2):hover {
+    background: #c0392b;
+}
+
