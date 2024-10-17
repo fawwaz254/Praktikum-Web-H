@@ -1,7 +1,7 @@
 /* Body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #1e1f26;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,17 +11,17 @@ body {
 
 /* Container styling */
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    background-color: #2b2c34;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
 }
 
 /* Title styling */
 h1 {
     text-align: center;
-    color: #333;
+    color: #e3e4e8;
 }
 
 /* Input container styling */
@@ -32,18 +32,20 @@ h1 {
 
 #task-input {
     flex-grow: 1;
-    padding: 10px;
-    border: 2px solid #4CAF50;
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid #00adb5;
+    border-radius: 8px;
     font-size: 16px;
+    background-color: #393e46;
+    color: #e3e4e8;
 }
 
 #add-btn {
-    background-color: #4CAF50;
+    background-color: #00adb5;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-left: 10px;
     cursor: pointer;
     font-size: 16px;
@@ -51,7 +53,7 @@ h1 {
 }
 
 #add-btn:hover {
-    background-color: #45a049;
+    background-color: #028090;
 }
 
 /* Task list styling */
@@ -61,10 +63,10 @@ ul {
 }
 
 li {
-    background-color: #e2e8f0;
+    background-color: #393e46;
     margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,18 +77,52 @@ li input[type="text"] {
     border: none;
     outline: none;
     font-size: 16px;
+    color: #e3e4e8;
+    width: 80%;
 }
 
+/* Button delete styling */
 li button {
-    background-color: #f44336;
-    color: white;
+    background-color: transparent;
+    color: #8de1ae;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    font-size: 18px;
+    transition: color 0.2s;
 }
 
 li button:hover {
-    background-color: #e53935;
+    color: #e53935;
 }
+
+/* Icon styling */
+li .edit-btn, li .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #8de1ae;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.2s;
+    margin-left: 10px;
+}
+
+li .edit-btn:hover {
+    color: #ffb300;
+}
+
+li .delete-btn:hover {
+    color: #e53935;
+}
+
+/* Task list styling updated for buttons */
+li {
+    background-color: #393e46;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
