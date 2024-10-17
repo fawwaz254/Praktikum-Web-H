@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Stylish</title>
+    <title>Kalkulator Menarik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled>
-
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
         <div class="buttons">
             <button onclick="clearDisplay()">AC</button>
-            <button onclick="insert('%')">%</button>
-            <button onclick="power()">x^y</button>
+            <button onclick="backspace()">DEL</button>
+            <button onclick="insert('%')">mod()</button>
+            <button onclick="insert('^')">x^y</button>
             <button onclick="insert('/')">÷</button>
 
             <button onclick="insert('7')">7</button>
@@ -31,7 +33,7 @@
             <button onclick="insert('3')">3</button>
             <button onclick="insert('+')">+</button>
 
-            <button class="zero" onclick="insert('0')">0</button>
+            <button onclick="insert('0')">0</button>
             <button onclick="insert('.')">.</button>
             <button onclick="calculate()">=</button>
         </div>
